@@ -69,21 +69,18 @@ class MainActivity : ComponentActivity() {
             val executor = Executors.newSingleThreadExecutor()
             executor.submit {
                 val nodeDir = applicationContext.filesDir.absolutePath + "/" + nodeDirName
-                copyAssets()
+                copyAssets(nodeDir)
                 startNodeWithArguments(
                     arrayOf(
                         "node",
                         "$nodeDir/main.js",
-                        "--custom-cwd",
-                        nodeDir
                     )
                 )
             }
         }
     }
 
-    private fun copyAssets() {
-        val nodeDir = applicationContext.filesDir.absolutePath + "/" + nodeDirName
+    private fun copyAssets(nodeDir: String) {
         if (wasAPKUpdated()) {
             val nodeDirReference = File(nodeDir)
             if (nodeDirReference.exists()) {
