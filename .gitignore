@@ -16,3 +16,4 @@ local.properties
 
 app/libnode/bin
 app/libnode/include
+app/libnode/nodejs-mobile*.zip

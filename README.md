@@ -1,4 +1,3 @@
 # Nodejs Mobile Example
 
-Download [nodejs-mobile-xxx.xx.xx-android.zip
-](https://github.com/nodejs-mobile/nodejs-mobile/releases) extract to `app/libnode`
+An [Nodejs Mobile](https://github.com/nodejs-mobile/nodejs-mobile) example using the Empty Compose Activity project
